@@ -5,22 +5,20 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed;
-    public float limitX, limitY;
+    public float yLimit;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         float verticalInput = Input.GetAxis("Vertical");
+        transform.position += new Vector3(0, verticalInput * speed * Time.deltaTime, 0);
 
-        transform.position = transform.position + new Vector3(0 , verticalInput * speed * Time.deltaTime, 0);
-
-      
+        transform.position = new Vector3(transform.position.x,
+            Mathf.Clamp(transform.position.y, -yLimit, yLimit), transform.position.z);
 
     }
 }
