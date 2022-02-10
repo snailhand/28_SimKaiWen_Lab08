@@ -456,8 +456,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560b66c2247fc472885da0a8185c8c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnObject: {fileID: 3441854745376264150, guid: 0cebb89d33e7e4f4895f29634533d760,
-    type: 3}
+  SpawnObjectArray:
+  - {fileID: 5008605268917956769, guid: d108b6e37fb0a480db1125d0d92d091a, type: 3}
+  - {fileID: 2149304043724922301, guid: 2c87c383a3e8d429f989c38cfe628f7c, type: 3}
+  - {fileID: 3441854745376264150, guid: 0cebb89d33e7e4f4895f29634533d760, type: 3}
 --- !u!1001 &1737663295
 PrefabInstance:
   m_ObjectHideFlags: 0
