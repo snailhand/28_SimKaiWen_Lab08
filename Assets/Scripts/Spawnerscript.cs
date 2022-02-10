@@ -5,20 +5,13 @@ using UnityEngine;
 public class Spawnerscript : MonoBehaviour
 {
     public GameObject[] SpawnObjectArray;
+    public float spawnRate;
     float PositionY;
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnObjects", 1, 1);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-
-
+        InvokeRepeating("SpawnObjects", 1, spawnRate);
     }
 
     void SpawnObjects()
